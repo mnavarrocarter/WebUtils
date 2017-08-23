@@ -23,11 +23,14 @@ def cli(config, verbose):
     """
     WebUtils by Matias Navarro Carter
     
-    Version: 1.0
+    Version: 1.1
 
     This program contains some useful tools for web development.
 
     If you happen to have a copy of this, consider yourself lucky.
+
+    In this current version (1.1) we only have some apache utilities related
+    to Virtual Hosts management.
 
     You can suggest improvements or report bugs at: https://github.com/mnavarrocarter/WebUtils/issues
     """
