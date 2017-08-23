@@ -94,10 +94,9 @@ def set_perm(config, string, repeat, out):
     
     All this will require sudo privileges.
     """
-    if config.verbose:
-        click.echo('We are in verbose mode.')
-    for x in xrange(repeat):
-        click.echo('Hello %s' % string, file=out)
+    # sudo adduser $USER www-data
+    # sudo chown -R www-data:www-data /home/$USER/public_html
+    # sudo chmod -R 775 /home/$USER/public_html 
 
 ###########################################################################
 # GIT COMMANDS
