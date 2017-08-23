@@ -72,7 +72,13 @@ def newvhost(config, name, here, laravel):
     current working directory, but keep in mind that Apache will need
     permissions to access that folder. Check 'webutils apache set_perm
     --help' for more info.
+
+    This script will require sudo privileges.
     """
+    if os.getuid() != 0:
+        click.echo('You need superpowers to run this thing!')
+        quit()
+
     if '.dev' not in name:
         if click.confirm('Do you want to add .dev to the name of your vHost? (recommended)'):
             name = name + '.dev'
@@ -113,7 +119,8 @@ def newvhost(config, name, here, laravel):
         quit()
 
     click.echo('Creating log files...')
-    os.system('sudo mkdir %s/logs' % path)
+    if not os.path.exists('%s/logs' % path):
+        os.system('sudo mkdir %s/logs' % path)
     os.system('sudo touch %s/logs/error.log' % path)
     os.system('sudo touch %s/logs/access.log' % path)
 
@@ -170,6 +177,10 @@ def setperm(config, directory, apache_user, apache_group, laravel):
     
     All this will require sudo privileges.
     """ 
+    if os.getuid() != 0:
+        click.echo('You need superpowers to run this thing!')
+        quit()
+
     os.system('sudo chown -R ' + apache_user + ':' + apache_group + ' ' + directory)
     os.system('sudo find ' + directory + ' -type d -exec chmod 775 {} +')
     os.system('sudo find ' + directory + ' -type d -exec chmod ug+s {} +')
@@ -199,6 +210,10 @@ def unsetperm(config, directory):
     
     All this will require sudo privileges.
     """
+    if os.getuid() != 0:
+        click.echo('You need superpowers to run this thing!')
+        quit()
+
     os.system('sudo chown -R $USER:$USER ' + directory)
     os.system('sudo chmod -R 750 ' + directory)
     os.system('sudo find ' + directory +' -type f -exec chmod 660 {} +')
@@ -221,9 +236,11 @@ def adduser(config, apache_group):
     them.
 
     You can use the --apache-group 
-    
-    This will require sudo privileges.
     """
+    if os.getuid() == 0:
+        click.echo('Run this as your user, duh!')
+        quit()
+
     os.system('sudo adduser $USER ' + apache_group)
 
 ###########################################################################
@@ -240,9 +257,11 @@ def remuser(config, apache_group):
     This command removes the current user from the www-data group.
 
     You can use the --apache-group flag to override the www-data group.
-    
-    This will require sudo privileges.
-    """
+    """ 
+    if os.getuid() == 0:
+        click.echo('Run this as your user, duh!')
+        quit()
+
     os.system('sudo deluser $USER ' + apache_group)
 
 ###########################################################################

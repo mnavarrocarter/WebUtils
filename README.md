@@ -4,7 +4,7 @@ A python cli tool for web developers in Ubuntu derivatives.
 
 ## Install
 
-Just install with `sudo pip install .` and enjoy!
+Just install with `sudo -H pip install .` and enjoy!
 
 ## Features
 1. Apache utilities (1.0) 
