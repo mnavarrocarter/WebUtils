@@ -1,0 +1,15 @@
+Source: webutils
+Section: python
+Priority: optional
+Maintainer: Matias Navarro Carter, <mnavarrocarter@gmail.com>
+Build-Depends: debhelper (>= 7),
+               python (>= 2.6.6-3~)
+Standards-Version: 3.9.2
+X-Python-Version: >= 2.6
+
+
+Package: webutils
+Architecture: all
+Section: python
+Depends: python-click, ${misc:Depends}, ${python:Depends}
+Description: A python cli tool for web developers

@@ -1,0 +1,7 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: WebUtils
+Upstream-Contact: Matías Navarro Carter, <mnavarrocarter@gmail.com>
+
+Files: *
+Copyright: 2017, Matías Navarro Carter, <mnavarrocarter@gmail.com>
+License: MIT

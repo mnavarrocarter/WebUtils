@@ -1,0 +1,1 @@
+debuild --no-tgz-check -us -uc && debuild clean
