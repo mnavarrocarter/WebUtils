@@ -1,6 +1,5 @@
 import click
 import os
-import sys
 
 # This config object will be created and instanciated so we can share 
 # global parameters and options to share with the other groups of 
@@ -23,7 +22,7 @@ def cli(config, verbose):
     """
     WebUtils by Matias Navarro Carter
     
-    Version: 1.1
+    Version: 1.2
 
     This program contains some useful tools for web development.
 
