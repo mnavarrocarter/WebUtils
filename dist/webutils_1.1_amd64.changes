@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 23 Aug 2017 16:59:08 -0300
+Source: webutils
+Binary: webutils
+Architecture: source all
+Version: 1.1
+Distribution: stable
+Urgency: low
+Maintainer: Matias Navarro Carter, <mnavarrocarter@gmail.com>
+Changed-By: Matías Navarro Carter <mnavarro@MNHPEOS>
+Description:
+ webutils   - A python cli tool for web developers
+Changes:
+ webutils (1.1) stable; urgency=low
+ .
+   * Initial release. (Closes: #XXXXXX)
+Checksums-Sha1:
+ 037f6b35110ecda536ddd8f1cefe65dddb81aff4 538 webutils_1.1.dsc
+ 07ffb17c8b9db16333eefd6f0f6a52854c93717a 6749816 webutils_1.1.tar.gz
+ 1650fc793126555a197d12f5366ca94efba6fcf5 5032 webutils_1.1_all.deb
+Checksums-Sha256:
+ 7b6a5bdb7d803a56b4d87127848631c2facd5f1c5758035ca8db21004e503db8 538 webutils_1.1.dsc
+ 487a4b4c5d40e5bdbda7b16a1b9f79b9593daa62b2fa2889d5f78d6d65e81801 6749816 webutils_1.1.tar.gz
+ 6a8b0f3ea11d3a490fc5b135aaa25708369ac146ec9d72ec5a048b1670efeb82 5032 webutils_1.1_all.deb
+Files:
+ abb29842aa22f10c8cf54e11ad1869f8 538 python optional webutils_1.1.dsc
+ 3fe601ddc0970fe211681e2cc57609bc 6749816 python optional webutils_1.1.tar.gz
+ e22f35fa3d834e18203411fb0eabb475 5032 python optional webutils_1.1_all.deb
