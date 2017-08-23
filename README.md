@@ -2,7 +2,14 @@ WebUtils: CLI utility for Web Developers
 ========================================
 A python cli tool for web developers in Ubuntu derivatives.
 
-## "Build" for development
+## Install
+
+Just install with `sudo pip install .` and enjoy!
+
+## Features
+1. Apache utilities (1.0) 
+
+## "Build" for Development
 
 ### Requirements:
 
