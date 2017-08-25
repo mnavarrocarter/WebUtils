@@ -4,6 +4,8 @@ A python cli tool with utilities for web developers in Debian derivatives.
 
 Download the latest .deb package [here](https://github.com/mnavarrocarter/WebUtils/raw/master/dist/webutils_latest_all.deb).
 
+This is not an stable version.
+
 ## Usage
 
 `webutils` will list all the available commands. At the minute only the
