@@ -1,4 +1,4 @@
-Source: webutils
+Source: rush
 Section: python
 Priority: optional
 Maintainer: Matias Navarro Carter, <mnavarrocarter@gmail.com>
@@ -8,8 +8,8 @@ Standards-Version: 3.9.2
 X-Python-Version: >= 2.6
 
 
-Package: webutils
+Package: rush
 Architecture: all
 Section: python
 Depends: python-click, ${misc:Depends}, ${python:Depends}
-Description: A python cli tool for web developers
+Description: A cli tool written in pyhton for rushing web devlopers.

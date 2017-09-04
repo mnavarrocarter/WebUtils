@@ -1,19 +1,19 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Web Utils',
-    version='1.2',
-    url='https://github.com/mnavarrocarter/WebUtils',
-    description='A python cli tool for web developers in Ubuntu derivatives.',
+    name='Rush',
+    version='0.3',
+    url='https://github.com/mnavarrocarter/rush',
+    description='A cli tool written in pyhton for rushing web developers.',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
         'Click',
     ],
-    # This creates an auto-executable called webutils that points to
-    # webutils cli() method.
+    # This creates an auto-executable called rush that points to
+    # rush cli() method.
     entry_points='''
         [console_scripts]
-        webutils=src.webutils:cli
+        rush=src.rush:cli
     ''',
 )

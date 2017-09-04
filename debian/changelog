@@ -1,5 +1,19 @@
-webutils (1.2) stable; urgency=low
+rush (0.3) unstable; urgency=low
 
-  * Initial release. (Closes: #XXXXXX)
+    * Added apache user:change command
+    * Set some warnings for permission changed.
+    * Added suggestions
+
+ -- Matías Navarro Carter <mnavarro@MNHPEOS>  Tue, 29 Aug 2017 10:09:00 -0300
+
+rush (0.2) unstable; urgency=low
+
+    * Fixed some bugs related to sudo execution
+
+ -- Matías Navarro Carter <mnavarro@MNHPEOS>  Fri, 25 Aug 2017 16:59:08 -0300
+
+rush (0.1) unstable; urgency=low
+
+    * Initial release
 
  -- Matías Navarro Carter <mnavarro@MNHPEOS>  Wed, 23 Aug 2017 16:59:08 -0300
